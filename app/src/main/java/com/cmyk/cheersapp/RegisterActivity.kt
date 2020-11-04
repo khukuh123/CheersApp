@@ -62,16 +62,16 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 user.userName = etUserName.text.toString()
                 user.email = etEmail2.text.toString()
                 user.password = etPassword2.text.toString()
-                if (user.userName.isEmpty() && user.email.isEmpty() && user.password.isEmpty()) {
+                if (user.userName.isEmpty() || user.email.isEmpty() || user.password.isEmpty()) {
                     when {
                         user.userName.isEmpty() -> {
                             errorMsg = "Username tidak boleh kosong!"
                         }
                         user.email.isEmpty() -> {
-                            errorMsg = "Username tidak boleh kosong!"
+                            errorMsg = "Email tidak boleh kosong!"
                         }
                         user.password.isEmpty() -> {
-                            errorMsg = "Username tidak boleh kosong!"
+                            errorMsg = "Password tidak boleh kosong!"
                         }
                     }
                     Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show()

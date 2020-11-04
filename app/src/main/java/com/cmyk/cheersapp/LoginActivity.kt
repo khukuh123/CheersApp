@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnLogin -> {
                 val email = etEmail.text.toString()
                 val password = etPassword.text.toString()
-                if (email.isEmpty() && password.isEmpty()) {
+                if (email.isEmpty() || password.isEmpty()) {
                     var errorMsg = ""
                     when {
                         email.isEmpty() -> {
