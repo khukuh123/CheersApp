@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "158582060389",
+    "firebase_url": "https://projek-mental-rpl.firebaseio.com",
+    "project_id": "projek-mental-rpl",
+    "storage_bucket": "projek-mental-rpl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158582060389:android:ad13be115a34c31ee7dd8c",
+        "android_client_info": {
+          "package_name": "com.cmyk.cheersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158582060389-t159sptetl8sh7fu1j594k97i1povfl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmyk.cheersapp",
+            "certificate_hash": "25c31d857cdea03a77528f05b48dcbfd74d2d856"
+          }
+        },
+        {
+          "client_id": "158582060389-ia1g2umsov3lc0d79f2ll2rellf7btk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9D6CPrC_PeB1nfDMm5dfbJtX4iAI5e7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158582060389-ia1g2umsov3lc0d79f2ll2rellf7btk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

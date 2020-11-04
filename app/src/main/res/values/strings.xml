@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CheersApp</string>
+    <string name="login_to_cheersapp">Login to CheersApp</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="register_text">Register</string>
+</resources>
