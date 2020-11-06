@@ -19,6 +19,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+        supportActionBar?.title = "Register"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         user = User()
 
         btnRegister2.setOnClickListener(this)

@@ -15,6 +15,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        supportActionBar?.hide()
 
         btnRegister.setOnClickListener(this)
         btnLogin.setOnClickListener(this)
