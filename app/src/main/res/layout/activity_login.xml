@@ -5,63 +5,126 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
+    android:background="@drawable/login_bg"
     tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/tvLoginToCheersApp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lobster"
         android:text="@string/login_to_cheersapp"
         android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/etEmail"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
         android:id="@+id/etEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/login_form_bg"
+        android:hint="@string/email_text"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:maxLength="80"
         android:maxLines="1"
-        app:layout_constraintBottom_toTopOf="@id/etPassword"
-        app:layout_constraintTop_toBottomOf="@id/tvLoginToCheersApp" />
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_form_bg"
+        android:hint="@string/password_text"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_btn"
         android:text="@string/btn_login"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btnRegister"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <TextView
+        android:id="@+id/dont_have_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_account"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnRegister"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_btn"
         android:text="@string/btn_register"
-        app:layout_constraintBottom_toBottomOf="@id/btnLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btnLogin"
-        app:layout_constraintTop_toTopOf="@id/btnLogin" />
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

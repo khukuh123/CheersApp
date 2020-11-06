@@ -3,4 +3,15 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="login_form_bg">#1affffff</color>
+    <color name="login_bg_1">#3023AE</color>
+    <color name="login_bg_2">#c86dd7</color>
+    <color name="login_btn">#03DAC5</color>
+
+    <color name="register_form_bg">#1affffff</color>
+    <color name="register_bg_1">#03DAC5</color>
+    <color name="register_bg_2">#6200EE</color>
+    <color name="register_btn">#c86dd7</color>
 </resources>

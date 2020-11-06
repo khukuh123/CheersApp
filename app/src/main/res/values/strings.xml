@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">CheersApp</string>
     <string name="login_to_cheersapp">Login to CheersApp</string>
-    <string name="btn_register">REGISTER</string>
-    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Log In</string>
     <string name="register_text">Register</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="username_text">Username</string>
+    <string name="dont_have_account">Do not have an account?</string>
 </resources>
