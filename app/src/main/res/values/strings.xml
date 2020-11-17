@@ -8,4 +8,9 @@
     <string name="password_text">Password</string>
     <string name="username_text">Username</string>
     <string name="dont_have_account">Do not have an account?</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="btn_listener">Listener</string>
+    <string name="btn_teller">Teller</string>
+    <string name="type_a_message">Type a message…</string>
+    <string name="send">S</string>
 </resources>

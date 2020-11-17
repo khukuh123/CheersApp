@@ -14,4 +14,7 @@
     <color name="register_bg_1">#03DAC5</color>
     <color name="register_bg_2">#6200EE</color>
     <color name="register_btn">#c86dd7</color>
+
+    <color name="loading_background">#4C000000</color>
+
 </resources>
