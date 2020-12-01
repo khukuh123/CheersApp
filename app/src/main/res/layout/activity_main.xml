@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/menu_bg"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,19 +17,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
+            android:textColor="@color/menu_top_text"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/btnListener"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0"
-            tools:text="Halo! Selamat datang, Tuan fulan!" />
+            tools:text="Halo! Selamat datang, Kak fulan!" />
 
         <Button
             android:id="@+id/btnListener"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_listener"
+            android:background="@drawable/menu_listener_btn"
+            android:layout_marginBottom="5sp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@id/btnTeller"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,6 +46,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_teller"
+            android:background="@drawable/menu_teller_btn"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@id/btnLogout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_logout"
+            android:background="@drawable/menu_logout_btn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

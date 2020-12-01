@@ -17,4 +17,14 @@
 
     <color name="loading_background">#4C000000</color>
 
+    <color name="menu_listener_btn">#ff5eea</color>
+    <color name="menu_teller_btn">#2ff0fa</color>
+    <color name="menu_logout_btn">#61ff8e</color>
+    <color name="menu_bg">#fcff61</color>
+    <color name="menu_top_text">#1c1b19</color>
+
+    <color name="rc_bg1">#42a7ff</color>
+    <color name="rc_bg2">#ffa6e6</color>
+    <color name="rc_button_send">#2954ff</color>
+
 </resources>
